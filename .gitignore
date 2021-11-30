@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+env/
+venv/
+env.bak/
+venv.bak/
+
+
+# Golang
+*.exe
+*.exe~
+*.dll
+*.so
+*.out
+
+
+# Ruby
+*.gem
+*.rbc
+.rvmrc
