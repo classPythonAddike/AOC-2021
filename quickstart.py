@@ -22,15 +22,6 @@ language_list = {
     "Ruby": "rb"
 }
 
-language_starter_codes = {
-    'py': 'import math\nn = input()\n',
-    'go': '''package main
-\nimport (\n    "fmt"\n    "bufio"\n    "os"\n)
-\nfunc main() {\n    scanner := bufio.Scanner(os.Stdin)\n    scanner.Scan()\n    n := scanner.Text()\n}\n''',
-    'rb': 'n = gets\n'
-}
-
-
 print("Select a language to continue with:")
 
 for num, lang in enumerate(language_list):
@@ -48,8 +39,11 @@ lang_filetype = language_list[language]
 
 print(f"Creating {language} file in c{new_c}/")
 
-with open(os.path.join(f"c{new_c}", f"main.{lang_filetype}"), "w") as f:
-    f.write(language_starter_codes[lang_filetype])
+with open(os.path.join(f"c{new_c}", f"p1.{lang_filetype}"), "w") as f:
+    pass
+
+with open(os.path.join(f"c{new_c}", f"p2.{lang_filetype}"), "w") as f:
+    pass
 
 with open(os.path.join(f"c{new_c}", "input.txt"), "w") as f: pass
 
